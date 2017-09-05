@@ -22,7 +22,7 @@ PROBLEMS?
 
 # cs600-F2017-project1
 
-This repository contains the solution for project one in Computer Science 600
+This repository contains the starter for project one in Computer Science 600
 Fall 2017. The main directory of this repository contains the LaTeX source code
 for a project that is designed for use with [GitHub
 Classroom](https://classroom.github.com/). To learn more about the course in
