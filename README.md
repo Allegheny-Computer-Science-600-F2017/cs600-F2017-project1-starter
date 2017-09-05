@@ -93,6 +93,61 @@ Projects on GitHub](https://guides.github.com/features/wikis/). Each of these
 guides will help you to understand how to use both [GitHub](http://github.com) and
 [GitHub Classroom](https://classroom.github.com/).
 
+## Travis
+
+This assignment uses [Travis CI](https://travis-ci.com/) to automatically run
+the checking programs every time you commit to your GitHub repository. The
+checking will start as soon as you have accepted the assignment, thus creating
+your own private repository, and the course instructor enables Travis for it. If
+you are using Travis for the first time, you will need to authorize Travis CI to
+access the private repositories that you created on GitHub.
+
+## Security
+
+In order for Travis to automatically update a PDF to GitHub when you tag the
+commit, you need to encrypt your access token for the system. To complete this
+task you must type the command `travis setup releases --force` in your GitHub
+repository for this assignment. Then, when prompted please type your username
+and password for GitHub. When asked to give the filename, you can type
+`senior_thesis_description.pdf`. When asked if you want to deploy to a specific
+organization, you can respond with the answer of "no". Finally, when this tool
+asks if you want to use encryption, please answer with a "yes".
+
+Now, you should have a `.travis.yml` file. Use a text editor to edit this file
+and place the following lines of code at the bottom of it. Finally, you should
+ask Professor Kapfhammer to enable Travis-based continuous integration. Now, you
+are ready to perform commits and tags and see your PDF uploaded to GitHub.
+
+```
+  file: _build/senior_thesis_description.pdf
+  skip_cleanup: true
+  on:
+    tags: true
+```
+
+## Tagging
+
+Since this repository primarily contains LaTeX source code, the Travis CI
+configuration for it will compile the source code and automatically release a
+PDF of the source code whenever the last commit is associated with a [Git
+Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging). As such, this will
+cause a PDF file to become available in the listing of the "Releases" listing
+for this repository. All release numbers for your writing in this repository
+should adhere to the [Semantic Versioning](http://semver.org/) standard.
+
+Please note that the faculty members who read the PDF that is generated from
+the LaTeX source code will only do so by downloading the "tagged" release of
+the file `senior_thesis_description.pdf` that has a version number greater
+than 1.0.0. That is, if your file is at version 1.0.0, then the file
+`senior_thesis_description-1.0.0.pdf` should be available for download in the
+"Releases" tab in your GitHub repository for this project.
+
+To create your first tag for the repository you could type `git tag
+senior_thesis_description-0.1.0`. Then, once you have finished making a single
+small change to the `senior_thesis_description.tex`, you should commit your file
+using a `git commit` command. Now, you are ready to push your changes with the
+appropriate tag by typing the command `git push -u origin master --tags`.
+
 ## Commands
 
 This repository allows you to use the GatorGrader tool to assess whether or not
@@ -108,22 +163,6 @@ there are no mistakes in the assignment, then this means that your research
 document and your written reflection are passing all of the automated checks.
 However, if the last line of the output indicates that there are mistakes, then
 you will need to understand what they are and then try to fix them.
-
-## Tagging
-
-Since this repository primarily contains LaTeX source code, the Travis CI
-configuration for it will compile the source code and automatically release a
-PDF of the source code whenever the last commit is associated with a [Git
-Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging). As such, this will
-cause a PDF file to become available in the listing of the "Releases" listing
-for this repository. All release numbers for your writing in this repository
-should adhere to the [Semantic Versioning](http://semver.org/) standard.
-Please note that the faculty members who read the PDF that is generated from
-the LaTeX source code will only do so by downloading the "tagged" release of
-the file `senior_thesis_description.pdf` that has a version number greater
-than 1.0.0. That is, if your file is at version 1.0.0, then the file
-`senior_thesis_description-1.0.0.pdf` should be available for download in the
-"Releases" tab in your GitHub repository for this project.
 
 ## Updates
 
@@ -149,15 +188,6 @@ you with new source code for this assignment. However, please note that, if you
 have edited the files that the course instructor updated, running the previous
 command may lead to Git merge conflicts. If this happens, you may need to
 manually resolve them with the help of the instructor or a teaching assistant.
-
-## Travis
-
-This assignment uses [Travis CI](https://travis-ci.com/) to automatically run
-the checking programs every time you commit to your GitHub repository. The
-checking will start as soon as you have accepted the assignment, thus creating
-your own private repository, and the course instructor enables Travis for it. If
-you are using Travis for the first time, you will need to authorize Travis CI to
-access the private repositories that you created on GitHub.
 
 ## Requirements
 
