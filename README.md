@@ -100,7 +100,10 @@ the checking programs every time you commit to your GitHub repository. The
 checking will start as soon as you have accepted the assignment, thus creating
 your own private repository, and the course instructor enables Travis for it. If
 you are using Travis for the first time, you will need to authorize Travis CI to
-access the private repositories that you created on GitHub.
+access the private repositories that you created on GitHub. You will partially
+complete this authorization by following intuitive steps in your web browser.
+You will also need to type the command `travis login --pro` in your terminal
+window when you are in the root of your GitHub repository.
 
 ## Security
 
