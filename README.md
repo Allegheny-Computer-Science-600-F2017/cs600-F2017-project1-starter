@@ -73,13 +73,13 @@ appear instead. Your course  instructor will reduce a researcher's grade for
 this assignment if the red &#x2717; appears on the last commit in GitHub
 immediately before the assignment's due date on September 7, 2017 at 9:00 am.
 
-Yet, if the green &#x2714; appears on the last commit in your GitHub repository,
-then you satisfied all of the main checks, thereby allowing the course
-instructors to further evaluate other aspects of your LaTeX source code and
-writing, as further described in the Evaluation section of this assignment
-sheet. Unless you provide the course instructors with documentation of the
-extenuating circumstances that you are facing, no late work will be considered
-towards your grade for this project.
+Yet, if the green &#x2714; appears on the last commit in your GitHub
+repository, then you satisfied all of the main checks, thereby allowing the
+course instructors to further evaluate other aspects of your LaTeX source code
+and writing, as further described in the remainder of this assignment sheet.
+Unless you provide the course instructors with documentation of the extenuating
+circumstances that you are facing, no late work will be considered towards your
+grade for this project.
 
 ## Learning
 
