@@ -110,7 +110,7 @@ created your encrypted access token. To complete this task you must type the
 command `travis setup releases --force` in your GitHub repository for this
 assignment. Then, when prompted, please type your username and password for
 GitHub. When asked to give the filename, you can type
-`_build/senior_thesis_description.pdf`. When asked if you want to deploy to a
+`_build/senior_thesis_description.pdf`. When asked if you want to deploy from a
 specific repository, you can respond with the answer of "no". Finally, when
 this tool asks if you want to use encryption, please answer with a "yes".
 
