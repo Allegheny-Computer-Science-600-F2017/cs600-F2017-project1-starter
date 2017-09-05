@@ -122,7 +122,6 @@ GitHub repository. Now, you are ready to perform a commit with tags and see your
 PDF uploaded to GitHub!
 
 ```
-  file: _build/senior_thesis_description.pdf
   skip_cleanup: true
   on:
     tags: true
