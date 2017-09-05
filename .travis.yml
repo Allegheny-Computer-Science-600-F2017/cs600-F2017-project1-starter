@@ -1,0 +1,15 @@
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends latexmk
+  texlive-fonts-extra texlive-fonts-recommended texlive-latex-base texlive-latex-extra
+  texlive-latex-recommended
+script:
+- mkdir _build
+- latexmk -pdf -outdir=_build senior_thesis_description.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: th2+9UjmXgroOm0z1DeJXkedHxEtKpKFEj18f75SN6at7FlUdwJOm5JEINx0u5Vcg+L8xM6q0a4/7FMoDSOHoYMWu/x52xndREwp8cTnIxeUd5JTagMeSDeH94DBpyqOTs9VBlEUu9W6IoWESr4IDlunQInJVe8De8KjeOk3Mw8TcpLub+V5Wqeb3Y26ZcW7ur4GUT1s0E7NCW6MWKl1U4NxPvst9ufn1ttcw90nk7qoRYPet7qItr0YujkRYxtevJcdYGSXzgWUfvkGyy0Haf4qrYABx9y5KI6Lkzk4peQE98MNr5KsUpQXYiZwZARO+Ens8Zv9X+AM+G4wTC+fKin2ejQpzAJFOPsrRBriqgdL6Lu0XN7gVEWiLW/Xrm0N+YdiVQ9QqhZaSfzKHwkQNIAF8+rhff/2yMUkhYbIh4MtO3G3ExlYajdLqLgEVERngkjw0517Qt4xIX7KXQHqPpCFSy4N03CjDxwXcDANIoEBqnT/z2/hOWzPX4FwWVeuZhde4ukRtByQ8uOAKCtxNMGkPTBUxq4BkG+AQqKHIVzW61iUCDPXUHE4LreUU7ZnaZKKLrI/9A7AWkBIxVGc0/dCTiCVobJ/HRMh95yLD6UXS0PfzJOgSHRFCkIYdsNhF2K4c2g4macUnvSLQP1O9lUjKMt44HuOENHNnITRDsQ=
+  file: _build/senior_thesis_description.pdf
+  skip_cleanup: true
+  on:
+    tags: true
