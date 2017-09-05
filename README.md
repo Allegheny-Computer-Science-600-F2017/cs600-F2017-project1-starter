@@ -180,7 +180,6 @@ course instructor by typing:
 
 ```
 git pull download master
-
 ```
 
 This second command can be run whenever a course instructor needs to provide you
