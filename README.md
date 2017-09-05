@@ -211,11 +211,7 @@ the green "New Issue" button. If you have found a problem with the [GatorGrader
 tool](https://github.com/gkapfham/gatorgrader) and the way that it checks you
 assignment, then you can follow the aforementioned steps to create an issue in
 its repository. To ensure that your issue is properly resolved, please provide
-as many details as is possible about the problem that you experienced. If you
-discover a problem with the laboratory assignment sheet, then please raise an
-issue in the
-[cs600-F2017-lab-sheets](https://github.com/Allegheny-Computer-Science-600-F2017/cs600-F2017-lab-sheets)
-repository and mention this assignment.
+as many details as is possible about the problem that you experienced.
 
 Please note that these assignment sheets have been developed and tested on an
 Ubuntu 16.04 workstation running a recent version of LaTeX that was manually
