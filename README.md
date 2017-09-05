@@ -150,13 +150,15 @@ file `senior_thesis_description.pdf` that has a version number greater than
 "Releases" tab in your GitHub repository for this project under the name
 `senior_thesis_description-gkapfham-1.0.0`.
 
-To create your first tag for this repository you could type `git tag
-senior_thesis_description-gkapfham-0.1.0`. Then, once you have finished making a
-single small change to the `senior_thesis_description.tex`, you should commit
-your file using a `git commit` command. Now, you are ready to push your changes
-with the appropriate tag by typing the command `git push -u origin master
---tags`. Of course, you should substitute your user name for `gkapfham` when you
-create the tag.
+Once you have finished making a single small change to the
+`senior_thesis_description.tex`, you should commit your file using a `git
+commit` command. Now, to create your first tag for this repository you could
+type `git tag senior_thesis_description-gkapfham-0.1.0`. Of course, you should
+substitute your user name for `gkapfham` when you create the tag. At this point,
+you are ready to push your changes with the appropriate tag by typing the
+command `git push -u origin master --tags`. After waiting for a period of time,
+you should see that your GitHub repository features a new release of the
+document that you must create for this project.
 
 When you make subsequent changes to your files and perform commits and you are
 ready to release a new version of `senior_thesis_description.pdf`, then you
