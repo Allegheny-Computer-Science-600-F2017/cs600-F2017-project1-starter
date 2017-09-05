@@ -105,19 +105,21 @@ access the private repositories that you created on GitHub.
 
 ## Security
 
-In order for Travis to automatically update a PDF to GitHub when you tag the
+In order for Travis to automatically upload a PDF to GitHub when you tag the
 commit, you need to encrypt your access token for the system. To complete this
 task you must type the command `travis setup releases --force` in your GitHub
-repository for this assignment. Then, when prompted please type your username
+repository for this assignment. Then, when prompted, please type your username
 and password for GitHub. When asked to give the filename, you can type
-`senior_thesis_description.pdf`. When asked if you want to deploy to a specific
-organization, you can respond with the answer of "no". Finally, when this tool
-asks if you want to use encryption, please answer with a "yes".
+`_build/senior_thesis_description.pdf`. When asked if you want to deploy to a
+specific organization, you can respond with the answer of "no". Finally, when
+this tool asks if you want to use encryption, please answer with a "yes".
 
-Now, you should have a `.travis.yml` file. Use a text editor to edit this file
-and place the following lines of code at the bottom of it. Finally, you should
-ask Professor Kapfhammer to enable Travis-based continuous integration. Now, you
-are ready to perform commits and tags and see your PDF uploaded to GitHub.
+Now, you should have a `.travis.yml` file with a secure access token for your
+GitHub repository for this assignment. Use a text editor to edit this file and
+place the following lines of code at the bottom of it. Finally, you should ask
+Professor Kapfhammer to enable Travis-based continuous integration for your
+GitHub repository. Now, you are ready to perform a commit with tags and see your
+PDF uploaded to GitHub!
 
 ```
   file: _build/senior_thesis_description.pdf
@@ -148,6 +150,12 @@ senior_thesis_description-0.1.0`. Then, once you have finished making a single
 small change to the `senior_thesis_description.tex`, you should commit your file
 using a `git commit` command. Now, you are ready to push your changes with the
 appropriate tag by typing the command `git push -u origin master --tags`.
+
+When you make subsequent changes to your files and perform commits, then you
+should tag you work before running a push with a tag that adheres to the
+[Semantic Versioning](http://semver.org/) standard. Each time that you correctly
+execute this sequence of commands you will release a version of your document
+that is easily accessible to your first and second readers on GitHub.
 
 ## Commands
 
