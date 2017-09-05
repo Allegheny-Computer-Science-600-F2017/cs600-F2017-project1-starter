@@ -162,11 +162,11 @@ document that you must create for this project.
 
 When you make subsequent changes to your files and perform commits and you are
 ready to release a new version of `senior_thesis_description.pdf`, then you
-should again tag your work before running a push with a tag that adheres to the
-[Semantic Versioning](http://semver.org/) standard. Each time that you correctly
-execute this sequence of commands you will release a new version of your
-document to GitHub that is easily accessible as a PDF to you and to your first
-and second readers.
+should again tag your work &mdash; before running a push &mdash; with a tag that
+adheres to the [Semantic Versioning](http://semver.org/) standard. Each time
+that you correctly execute this sequence of commands you will release a new
+version of your document to GitHub that is easily accessible as a PDF to you and
+to your first and second readers.
 
 ## Updates
 
