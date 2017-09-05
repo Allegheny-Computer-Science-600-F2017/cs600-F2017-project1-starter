@@ -28,8 +28,9 @@ for a project that is designed for use with [GitHub
 Classroom](https://classroom.github.com/). To learn more about the course in
 which these assignments were completed, please visit the [Computer Science 600
 Fall 2017 GitHub
-Organization](https://github.com/Allegheny-Computer-Science-600-F2017). The
-the LaTeX file in this repository are automatically compiled with [Travis
+Organization](https://github.com/Allegheny-Computer-Science-600-F2017).
+
+The the LaTeX file in this repository are automatically compiled with [Travis
 CI](https://travis-ci.org/), thus ensuring that they compile correctly and,
 moreover, that a PDF of the project file is available in the GitHub repository
 whenever a commit is tagged for a release. Additionally, you can use a LaTeX
