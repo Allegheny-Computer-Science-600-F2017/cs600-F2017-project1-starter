@@ -37,6 +37,16 @@ repository whenever a commit is tagged for a release. Additionally, you can use
 a LaTeX compilation command like `pdflatex` or `latexmk` to compile the provided
 LaTeX file on your local workstation.
 
+<!---
+
+ Since the Travis builds for this repository will initially fail (as evidenced by
+ a red &#x2717; appearing in the commit logs instead of a green &#x2714;), the
+ researcher is responsible for completing all of the steps needed to satisfy the
+ requirements for the assignment, thus causing a &#x2714; to instead appear in
+ the commit logs.
+
+--->
+
 ## Introduction
 
 This assignment requires a researcher to write a LaTeX document, stored in the
@@ -61,7 +71,7 @@ requirements, then you will see a green &#x2714; in the listing of commits in
 GitHub. If your submission does not meet the requirements, a red &#x2717; will
 appear instead. Your course  instructor will reduce a researcher's grade for
 this assignment if the red &#x2717; appears on the last commit in GitHub
-immediately before the assignment's due date on September 7, 2017 at 9:00 am.
+immediately before the assignment's due date on September 8, 2017 at 9:00 am.
 
 Yet, if the green &#x2714; appears on the last commit in your GitHub repository,
 then you satisfied all of the main checks, thereby allowing the course
@@ -126,28 +136,33 @@ PDF of the main file whenever the last commit is associated with a [Git
 Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging). As such, this will
 cause a PDF file to become available in the listing of the "Releases" listing
 for this repository. All release numbers for your writing in this repository
-should adhere to the [Semantic Versioning](http://semver.org/) standard.
+should adhere to the [Semantic Versioning](http://semver.org/) standard that
+all GitHub projects are asked to adopt.
 
-Please note that the faculty members who read the PDF that is generated from
-the LaTeX source code will only do so by downloading the "tagged" release of
-the file `senior_thesis_description.pdf` that has a version number greater
-than 1.0.0. That is, if your file is at version 1.0.0, then the file
-`senior_thesis_description-1.0.0.pdf` should be available for download in the
-"Releases" tab in your GitHub repository for this project.
+Please note that the faculty members who read the PDF that is generated from the
+LaTeX source code will only do so by downloading the "tagged" release of the
+file `senior_thesis_description.pdf` that has a version number greater than
+1.0.0. That is, if your commit is tagged with
+`senior_thesis_description-gkapfham-1.0.0`, then the file
+`senior_thesis_description.pdf` should be available for download in the
+"Releases" tab in your GitHub repository for this project under the name
+`senior_thesis_description-gkapfham-1.0.0`.
 
 To create your first tag for this repository you could type `git tag
-senior_thesis_description-0.1.0`. Then, once you have finished making a single
-small change to the `senior_thesis_description.tex`, you should commit your file
-using a `git commit` command. Now, you are ready to push your changes with the
-appropriate tag by typing the command `git push -u origin master --tags`.
+senior_thesis_description-gkapfham-0.1.0`. Then, once you have finished making a
+single small change to the `senior_thesis_description.tex`, you should commit
+your file using a `git commit` command. Now, you are ready to push your changes
+with the appropriate tag by typing the command `git push -u origin master
+--tags`. Of course, you should substitute your user name for `gkapfham` when you
+create the tag.
 
 When you make subsequent changes to your files and perform commits and you are
 ready to release a new version of `senior_thesis_description.pdf`, then you
 should again tag your work before running a push with a tag that adheres to the
 [Semantic Versioning](http://semver.org/) standard. Each time that you correctly
-execute this sequence of commands you will release a version of your document to
-GitHub that is easily accessible as a PDF to you and to your first and second
-readers.
+execute this sequence of commands you will release a new version of your
+document to GitHub that is easily accessible as a PDF to you and to your first
+and second readers.
 
 ## Updates
 
